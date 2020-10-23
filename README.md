@@ -83,4 +83,4 @@ By Ana Torres 👋🏽 Find me!
 
 <h2 id="license"> 📝 License </h2>
 
-This project is under the <a href="../LICENSE">MIT license</a>.
+This project is under the MIT license.
