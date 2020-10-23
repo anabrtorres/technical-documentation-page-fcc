@@ -1,0 +1,31 @@
+@media (max-width: 768px) {
+  #doc {
+    line-height: 22px;
+    width: 90%;
+    margin: 0 auto;
+    font-family: montserrat, sans-serif;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #navbar {
+    position: relative;
+    width: 95%;
+    margin: 0 auto;
+    height: auto;
+    padding: 10px;
+    border-right: none;
+  }
+
+  #main-doc {
+    position: relative;
+    width: 95%;
+    margin: 0 auto;
+    padding: 10px;
+    margin-bottom: 50px;
+  }
+
+  #navbar li {
+    width: 50%;
+  }
+}

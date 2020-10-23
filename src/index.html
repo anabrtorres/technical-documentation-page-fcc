@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="pt_BR" id="doc">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Technical Documentation Page</title>
+
+    <link rel="stylesheet" href="../public/css/main.css" />
+    <link rel="stylesheet" href="../public/css/mobile.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat"
+      rel="stylesheet"
+    />
+
+  </head>
+
+  <div id="sumary">
+    <nav id="navbar">
+      <header>
+        <h1>HTML Documentation</h1>
+      </header>
+
+      <ul>
+        <li><a href="#Introduction" class="nav-link">Introduction</a></li>
+        <hr />
+        <li>
+          <a href="#Anatomy_of_an_HTML_Element" class="nav-link"
+            >Anatomy of an HTML Element</a
+          >
+        </li>
+        <hr />
+        <li><a href="#Attributes" class="nav-link">Attributes</a></li>
+        <hr />
+        <li>
+          <a href="#Anatomy_of_an_HTML_Document" class="nav-link"
+            >Anatomy of an HTML Document</a
+          >
+        </li>
+        <hr />
+        <li>
+          <a href="#Entity_References" class="nav-link">Entity References</a>
+        </li>
+        <hr />
+        <li><a href="#HTML_Comments" class="nav-link">HTML Comments</a></li>
+        <hr />
+        <li><a href="#Reference" class="nav-link">Reference</a></li>
+        <hr />
+      </ul>
+    </nav>
+  </div>
+
+  <body id="main-doc">
+    <section class="main-section" id="Introduction">
+      <header>
+        <h2>Introduction</h2>
+        <p>
+          HTML (Hypertext Markup Language) is not a programming language. It is
+          a markup language that tells web browsers how to structure the web
+          pages you visit. It can be as complicated or as simple as the web
+          developer wants it to be. HTML consists of a series of elements, which
+          you use to enclose, wrap, or mark up different parts of content to
+          make it appear or act in a certain way. The enclosing tags can make
+          content into a hyperlink to connect to another page, italicize words,
+          and so on. For example, consider the following line of text:
+        </p>
+        <code>
+          <span class="code">My cat is very grumpy</span>
+        </code>
+        <p>
+          If we wanted the text to stand by itself, we could specify that it is
+          a paragraph by enclosing it in a paragraph (<code class="code-text"
+            >&lt;p></code
+          >) element:
+        </p>
+        <code>
+          <span class="code">
+            <span class="code-punctuation">&lt;</span
+            ><span class="code-element">p</span
+            ><span class="code-punctuation">></span>My cat is very grumpy<span
+              class="code-punctuation"
+              >&lt;/</span
+            ><span class="code-element">p</span
+            ><span class="code-punctuation">></span>
+          </span>
+        </code>
+      </header>
+    </section>
+
+    <section class="main-section" id="Anatomy_of_an_HTML_Element">
+      <header>
+        <h2>Anatomy of an HTML</h2>
+        <p>The anatomy of our element is:</p>
+        <ul>
+          <li>
+            <b>The opening tag:</b> This consists of the name of the element (in
+            this example, p for paragraph), wrapped in opening and closing angle
+            brackets. This opening tag marks where the element begins or starts
+            to take effect. In this example, it precedes the start of the
+            paragraph text.
+          </li>
+          <li>
+            <b>The content:</b> This is the content of the element. In this
+            example, it is the paragraph text.
+          </li>
+          <li>
+            <b>The closing tag:</b> This is the same as the opening tag, except
+            that it includes a forward slash before the element name. This marks
+            where the element ends. Failing to include a closing tag is a common
+            beginner error that can produce peculiar results.
+          </li>
+        </ul>
+        <p>
+          The element is the opening tag, followed by content, followed by the
+          closing tag.
+        </p>
+      </header>
+    </section>
+
+    <section class="main-section" id="Attributes">
+      <header>
+        <h2>Attributes</h2>
+        <p>
+          Elements can also have attributes. Attributes contain extra
+          information about the element that won't appear in the content. In
+          this example, the <code class="code-text">class</code> attribute is an
+          identifying name used to target the element with style information. An
+          attribute should have:
+        </p>
+        <ul>
+          <li>
+            A space between it and the element name. (For an element with more
+            than one attribute, the attributes should be separated by spaces
+            too.)
+          </li>
+          <li>The attribute name, followed by an equal sign.</li>
+          <li>
+            An attribute value, wrapped with opening and closing quote marks.
+          </li>
+        </ul>
+      </header>
+    </section>
+
+    <section class="main-section" id="Anatomy_of_an_HTML_Document">
+      <header>
+        <h2>Anatomy of an HTML Document</h2>
+        <p>
+          Individual HTML elements aren't very useful on their own. Next, let's
+          examine how individual elements combine to form an entire HTML page:
+        </p>
+        <code
+          ><span class="code">
+            <span class="code-punctuation">&lt;!DOCTYPE html></span><br />
+            <span class="code-punctuation">&lt;</span
+            ><span class="code-element">html</span
+            ><span class="code-punctuation">></span><br />
+            <span style="margin-left: 20px" class="code-punctuation">&lt;</span
+            ><span class="code-element">head</span
+            ><span class="code-punctuation">></span><br />
+            <span style="margin-left: 40px" class="code-punctuation">&lt;</span
+            ><span class="code-element">meta</span
+            ><span class="code-atrr-name"> charset</span
+            ><span class="code-punctuation">="</span
+            ><span class="code-atrr-value">utf-8</span
+            ><span class="code-punctuation">"></span><br />
+            <span style="margin-left: 40px" class="code-punctuation">&lt;</span
+            ><span class="code-element">title</span
+            ><span class="code-punctuation">></span>My test page<span
+              class="code-punctuation"
+              >&lt;/</span
+            ><span class="code-element">title</span
+            ><span class="code-punctuation">></span>
+            <span style="margin-left: 20px" class="code-punctuation">&lt;/</span
+            ><span class="code-element">head</span
+            ><span class="code-punctuation">></span><br />
+            <span style="margin-left: 20px" class="code-punctuation">&lt;</span
+            ><span class="code-element">body</span
+            ><span class="code-punctuation">></span><br />
+            <span style="margin-left: 40px" class="code-punctuation">&lt;</span
+            ><span class="code-element">p</span
+            ><span class="code-punctuation">></span>This is my page<span
+              class="code-punctuation"
+              >&lt;/</span
+            ><span class="code-element">p</span
+            ><span class="code-punctuation">></span><br />
+            <span style="margin-left: 20px" class="code-punctuation">&lt;/</span
+            ><span class="code-element">body</span
+            ><span class="code-punctuation">></span><br />
+            <span class="code-punctuation">&lt;/</span
+            ><span class="code-element">html</span
+            ><span class="code-punctuation">></span><br /> </span
+        ></code>
+        <p>Here we have:</p>
+        <ol>
+          <li>
+            <code class="code-text">&lt;!DOCTYPE html></code>: The doctype. When
+            HTML was young (1991-1992), doctypes were meant to act as links to a
+            set of rules that the HTML page had to follow to be considered good
+            HTML. Doctypes used to look something like this:
+            <code
+              ><span class="code">
+                <span class="code-punctuation"
+                  >&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0
+                  Transitional//EN"></span
+                >
+              </span></code
+            >
+          </li>
+          <li>
+            <code class="code-text">&lt;html>&lt;/html></code>: The
+            <code class="code-text">&lt;html></code> element. This element wraps
+            all the content on the page. It is sometimes known as the root
+            element.
+          </li>
+          <li>
+            <code class="code-text">&lt;head>&lt;/head></code>: The
+            <code class="code-text">&lt;head></code> element. This element
+            specifies the character set for your document to UTF-8, which
+            includes most characters from the vast majority of human written
+            languages. With this setting, the page can now handle any textual
+            content it might contain. There is no reason not to set this, and it
+            can help avoid some problems later.
+          </li>
+          <li>
+            <code class="code-text">&lt;meta charset="utf-8"></code>: This
+            element specifies the character set for your document to UTF-8,
+            which includes most characters from the vast majority of human
+            written languages. With this setting, the page can now handle any
+            textual content it might contain. There is no reason not to set
+            this, and it can help avoid some problems later.
+          </li>
+          <li>
+            <code class="code-text">&lt;title>&lt;/title></code>: The
+            <code class="code-text">&lt;title></code> element. This sets the
+            title of the page, which is the title that appears in the browser
+            tab the page is loaded in. The page title is also used to describe
+            the page when it is bookmarked.
+          </li>
+          <li>
+            <code class="code-text">&lt;body>&lt;/body></code>: The
+            <code class="code-text">&lt;body></code> element. This contains all
+            the content that displays on the page, including text, images,
+            videos, games, playable audio tracks, or whatever else.
+          </li>
+        </ol>
+      </header>
+    </section>
+
+    <section class="main-section" id="Entity_References">
+      <header>
+        <h2>Entity References</h2>
+        <p>
+          In HTML, the characters <code class="code-text">&lt;</code>,
+          <code class="code-text">></code>,<code class="code-text">"</code
+          >,<code class="code-text">'</code> and
+          <code class="code-text">&</code> are special characters. They are
+          parts of the HTML syntax itself. So how do you include one of these
+          special characters in your text? For example, if you want to use an
+          ampersand or less-than sign, and not have it interpreted as code.
+        </p>
+        <p>
+          You do this with character references. These are special codes that
+          represent characters, to be used in these exact circumstances. Each
+          character reference starts with an ampersand (&), and ends with a
+          semicolon (;).
+        </p>
+        <p>
+          See the equivalent reference of each character: < = lt, > = gt, " =
+          quot, ' = apos, & = amp.
+        </p>
+        <p>
+          To find more about entity reference, see
+          <a
+            href="http://en.wikipedia.org/wiki/List_of_XML_and_HTML_character_entity_references"
+          >
+            List of XML and HTML character entity references</a
+          >
+          (Wikipedia).
+        </p>
+      </header>
+    </section>
+
+    <section class="main-section" id="HTML_Comments">
+      <header>
+        <h2>HTML Comments</h2>
+        <p>
+          HTML has a mechanism to write comments in the code. Browsers ignore
+          comments, effectively making comments invisible to the user. The
+          purpose of comments is to allow you to include notes in the code to
+          explain your logic or coding. This is very useful if you return to a
+          code base after being away for long enough that you don't completely
+          remember it. Likewise, comments are invaluable as different people are
+          making changes and updates.
+        </p>
+        <p>
+          To write an HTML comment, wrap it in the special markers
+          <code class="code-text">&lt;!--</code> and
+          <code class="code-text">--></code>. For example:
+        </p>
+        <code
+          ><span class="code">
+            <span class="code-punctuation">&lt;</span
+            ><span class="code-element">p</span
+            ><span class="code-punctuation">></span>I'm not inside a
+            comment<span class="code-punctuation">&lt;/</span
+            ><span class="code-element">p</span
+            ><span class="code-punctuation">></span> <br /><span
+              class="code-punctuation"
+              >&lt;!-- &lt;p>I am!&lt;/p> --></span
+            >
+          </span></code
+        >
+      </header>
+    </section>
+
+    <section class="main-section" id="Reference">
+      <header>
+        <h2>Reference</h2>
+        <p>
+          All the documentation in this page is taken from
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started"
+            >MDN web docs</a
+          >.
+        </p>
+      </header>
+    </section>
+  </body>
+</html>
